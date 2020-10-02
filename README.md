@@ -3,13 +3,13 @@ I automated the proccess of swapping on python. But it decides to like or dislik
 
 To run the code, follow the steps below:
 
-Run pip install requirements.txt
-Download chromedriver according to your chrome version
-Update the passwords.py with your facebook username and password.
-Run py -i bot_tinder.py on your terminal
-Type bot = TinderBot() and then bot.login()
-Wait for tinder to load and type bot.location()
-Then type bot.swap()
+Run pip install requirements.txt.<br/>
+Download chromedriver according to your chrome version.<br/>
+Update the passwords.py with your facebook username and password.<br/>
+Run py -i bot_tinder.py on your terminal.<br/>
+Type bot = TinderBot() and then bot.login().<br/>
+Wait for tinder to load and type bot.location().<br/>
+Then type bot.swap().<br/>
 
 Enjoy!
 
