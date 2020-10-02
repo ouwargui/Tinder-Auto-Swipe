@@ -1,0 +1,14 @@
+appdirs==1.4.3
+astroid==2.3.3
+colorama==0.4.3
+distlib==0.3.0
+filelock==3.0.12
+isort==4.3.21
+lazy-object-proxy==1.4.3
+mccabe==0.6.1
+pylint==2.4.4
+six==1.14.0
+urllib3==1.25.10
+virtualenv==20.0.13
+wrapt==1.11.2
+selenium==3.141.0
