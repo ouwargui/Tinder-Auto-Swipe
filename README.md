@@ -10,4 +10,4 @@ Run py bot_tinder.py on your terminal.<br/>
 
 Enjoy!
 
-This project was just to study and have some fun coding.
+This project was just to study and have some fun coding, feel free to use the code however you want :)
