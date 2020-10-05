@@ -1,5 +1,5 @@
 # Tinder-Auto-Swipe
-I automated the proccess of swapping on python. But it decides to like or dislike randomly. I put a delay between each swipe to avoid bans, but use it on your own risk.
+I automated the proccess of swipping on tinder with python. But it decides to like or dislike randomly. I put a delay between each swipe to avoid bans, but use it on your own risk.
 
 To run the code, follow the steps below:
 
