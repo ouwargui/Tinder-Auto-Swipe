@@ -55,16 +55,21 @@ class TinderBot():
 
     def location(self):
         location_xpath = '//*[@id="modal-manager"]/div/div/div/div/div[3]/button[1]'
+
+        element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, location_xpath)))
+
         location_btn = self.driver.find_element_by_xpath(location_xpath)
         location_btn.click()
 
         notification_xpath = '//*[@id="modal-manager"]/div/div/div/div/div[3]/button[2]'
         notification_btn = self.driver.find_element_by_xpath(notification_xpath)
         notification_btn.click()
+        time.sleep(5)
 
     def swap(self):
         like_xpath = '//*[@id="content"]/div/div[1]/div/main/div[1]/div/div/div[1]/div/div[2]/div[4]/button'
         dislike_xpath = '//*[@id="content"]/div/div[1]/div/main/div[1]/div/div/div[1]/div/div[2]/div[2]/button'
+        home_screen_xpath = '//*[@id="modal-manager"]/div/div/div[2]/button[2]'
 
         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, like_xpath)))
         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, dislike_xpath)))
@@ -78,11 +83,21 @@ class TinderBot():
         
         random.seed()
 
-        while(i < 100):
-            if(random.randint(1,2) == 1):
-                dislike_btn.click()
-            else:
-                like_btn.click()
+        while(i < 20):
+            try:
+                if(random.randint(1,2) == 1):
+                    dislike_btn.click()
+                else:
+                    like_btn.click()
+            except:
+                home_screen_btn = self.driver.find_element_by_xpath(home_screen_xpath)
+                home_screen_btn.click()
 
             i += 1
             time.sleep(1)
+
+
+bot = TinderBot()
+bot.login()
+bot.location()
+bot.swap()
