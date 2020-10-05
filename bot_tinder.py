@@ -13,7 +13,6 @@ class TinderBot():
     def login(self):
         self.driver.get('https://tinder.com/')
         
-        #fb_btn = self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[2]/button')
         cookies_xpath = '/html/body/div[1]/div/div[2]/div/div/div[1]/button'
         fb_xpath = '//*[@id="modal-manager"]/div/div/div/div/div[3]/span/div[2]/button'
         more_options_xpath = '//*[@id="modal-manager"]/div/div/div/div/div[3]/span/button'
