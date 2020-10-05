@@ -6,10 +6,7 @@ To run the code, follow the steps below:
 Run pip install requirements.txt.<br/>
 Download chromedriver according to your chrome version.<br/>
 Update the passwords.py with your facebook username and password.<br/>
-Run py -i bot_tinder.py on your terminal.<br/>
-Type bot = TinderBot() and then bot.login().<br/>
-Wait for tinder to load and type bot.location().<br/>
-Then type bot.swap().<br/>
+Run py bot_tinder.py on your terminal.<br/>
 
 Enjoy!
 
