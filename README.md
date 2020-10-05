@@ -3,7 +3,7 @@ I automated the proccess of swapping on python. But it decides to like or dislik
 
 To run the code, follow the steps below:
 
-Run pip install requirements.txt.<br/>
+Run pip install requirements.txt on your terminal.<br/>
 Download chromedriver according to your chrome version.<br/>
 Update the passwords.py with your facebook username and password.<br/>
 Run py bot_tinder.py on your terminal.<br/>
